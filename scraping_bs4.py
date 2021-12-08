@@ -25,6 +25,16 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 
 #s = soup.p	# to get a div
 
-s = soup.p['class']
+#s = soup.p['class']
+
+#s = soup.a
+
+#s = soup.find_all('a')
+
+#s = soup.find('a')
+
+#s = soup.find(id='link3')
+
+s = soup.find_all(href="http://example.com/lacie")
 
 print(s)
